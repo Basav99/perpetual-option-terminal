@@ -51,71 +51,75 @@ export const OptionChain = () => {
         <h1 className="text-2xl font-semibold text-neutral-800 mb-2">
           Option Chain - Perpetual American Options
         </h1>
-        <div className="flex gap-4 mb-4">
-          <Select>
-            <SelectTrigger className="w-[200px]">
-              <SelectValue placeholder="Select asset" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="steth">stETH</SelectItem>
-              <SelectItem value="xstrk">xSTRK</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select>
-            <SelectTrigger className="w-[160px]">
-              <SelectValue placeholder="Staked time" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="1month">1 Month</SelectItem>
-              <SelectItem value="3months">3 Months</SelectItem>
-              <SelectItem value="6months">6 Months</SelectItem>
-              <SelectItem value="12months">12 Months</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select>
-            <SelectTrigger className="w-[160px]">
-              <SelectValue placeholder="Select days" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="monday">Monday</SelectItem>
-              <SelectItem value="tuesday">Tuesday</SelectItem>
-              <SelectItem value="wednesday">Wednesday</SelectItem>
-              <SelectItem value="thursday">Thursday</SelectItem>
-              <SelectItem value="friday">Friday</SelectItem>
-              <SelectItem value="saturday">Saturday</SelectItem>
-              <SelectItem value="sunday">Sunday</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select>
-            <SelectTrigger className="w-[160px]">
-              <SelectValue placeholder="Select week" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="week1">Week 1</SelectItem>
-              <SelectItem value="week2">Week 2</SelectItem>
-              <SelectItem value="week3">Week 3</SelectItem>
-              <SelectItem value="week4">Week 4</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select>
-            <SelectTrigger className="w-[160px]">
-              <SelectValue placeholder="Select month" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="jan">January</SelectItem>
-              <SelectItem value="feb">February</SelectItem>
-              <SelectItem value="mar">March</SelectItem>
-              <SelectItem value="apr">April</SelectItem>
-              <SelectItem value="may">May</SelectItem>
-              <SelectItem value="jun">June</SelectItem>
-              <SelectItem value="jul">July</SelectItem>
-              <SelectItem value="aug">August</SelectItem>
-              <SelectItem value="sep">September</SelectItem>
-              <SelectItem value="oct">October</SelectItem>
-              <SelectItem value="nov">November</SelectItem>
-              <SelectItem value="dec">December</SelectItem>
-            </SelectContent>
-          </Select>
+        <div className="flex flex-col gap-4 mb-4">
+          <div className="flex gap-4">
+            <Select>
+              <SelectTrigger className="w-[200px]">
+                <SelectValue placeholder="Select asset" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="steth">stETH</SelectItem>
+                <SelectItem value="xstrk">xSTRK</SelectItem>
+              </SelectContent>
+            </Select>
+            <Select>
+              <SelectTrigger className="w-[160px]">
+                <SelectValue placeholder="Staked time" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="1month">1 Month</SelectItem>
+                <SelectItem value="3months">3 Months</SelectItem>
+                <SelectItem value="6months">6 Months</SelectItem>
+                <SelectItem value="12months">12 Months</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="flex gap-4">
+            <Select>
+              <SelectTrigger className="w-[160px]">
+                <SelectValue placeholder="Select days" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="monday">Monday</SelectItem>
+                <SelectItem value="tuesday">Tuesday</SelectItem>
+                <SelectItem value="wednesday">Wednesday</SelectItem>
+                <SelectItem value="thursday">Thursday</SelectItem>
+                <SelectItem value="friday">Friday</SelectItem>
+                <SelectItem value="saturday">Saturday</SelectItem>
+                <SelectItem value="sunday">Sunday</SelectItem>
+              </SelectContent>
+            </Select>
+            <Select>
+              <SelectTrigger className="w-[160px]">
+                <SelectValue placeholder="Select week" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="week1">Week 1</SelectItem>
+                <SelectItem value="week2">Week 2</SelectItem>
+                <SelectItem value="week3">Week 3</SelectItem>
+                <SelectItem value="week4">Week 4</SelectItem>
+              </SelectContent>
+            </Select>
+            <Select>
+              <SelectTrigger className="w-[160px]">
+                <SelectValue placeholder="Select month" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="jan">January</SelectItem>
+                <SelectItem value="feb">February</SelectItem>
+                <SelectItem value="mar">March</SelectItem>
+                <SelectItem value="apr">April</SelectItem>
+                <SelectItem value="may">May</SelectItem>
+                <SelectItem value="jun">June</SelectItem>
+                <SelectItem value="jul">July</SelectItem>
+                <SelectItem value="aug">August</SelectItem>
+                <SelectItem value="sep">September</SelectItem>
+                <SelectItem value="oct">October</SelectItem>
+                <SelectItem value="nov">November</SelectItem>
+                <SelectItem value="dec">December</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       </div>
 
