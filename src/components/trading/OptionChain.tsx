@@ -62,18 +62,8 @@ export const OptionChain = () => {
                 <SelectItem value="xstrk">xSTRK</SelectItem>
               </SelectContent>
             </Select>
-            <Select>
-              <SelectTrigger className="w-[160px]">
-                <SelectValue placeholder="Staked time" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="1month">1 Month</SelectItem>
-                <SelectItem value="3months">3 Months</SelectItem>
-                <SelectItem value="6months">6 Months</SelectItem>
-                <SelectItem value="12months">12 Months</SelectItem>
-              </SelectContent>
-            </Select>
           </div>
+          <h2 className="text-lg font-semibold text-neutral-700">Staked Time</h2>
           <div className="flex gap-4">
             <Select>
               <SelectTrigger className="w-[160px]">
