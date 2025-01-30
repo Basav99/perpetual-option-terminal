@@ -1,6 +1,12 @@
 import { ActionButton } from "./ActionButton";
 import { DataCell } from "./DataCell";
-import { Select } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { ChevronDown } from "lucide-react";
 
 const mockData = [
@@ -48,22 +54,22 @@ export const OptionChain = () => {
         </h1>
         <div className="flex gap-4 mb-4">
           <Select>
-            <Select.Trigger className="w-[200px]">
-              <Select.Value placeholder="Select asset" />
-            </Select.Trigger>
-            <Select.Content>
-              <Select.Item value="btc">Bitcoin (BTC)</Select.Item>
-              <Select.Item value="eth">Ethereum (ETH)</Select.Item>
-            </Select.Content>
+            <SelectTrigger className="w-[200px]">
+              <SelectValue placeholder="Select asset" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="btc">Bitcoin (BTC)</SelectItem>
+              <SelectItem value="eth">Ethereum (ETH)</SelectItem>
+            </SelectContent>
           </Select>
           <Select>
-            <Select.Trigger className="w-[200px]">
-              <Select.Value placeholder="Select expiry" />
-            </Select.Trigger>
-            <Select.Content>
-              <Select.Item value="1w">1 Week</Select.Item>
-              <Select.Item value="2w">2 Weeks</Select.Item>
-            </Select.Content>
+            <SelectTrigger className="w-[200px]">
+              <SelectValue placeholder="Select expiry" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="1w">1 Week</SelectItem>
+              <SelectItem value="2w">2 Weeks</SelectItem>
+            </SelectContent>
           </Select>
         </div>
       </div>
