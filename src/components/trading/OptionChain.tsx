@@ -7,7 +7,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { ChevronDown } from "lucide-react";
 
 const mockData = [
   {
@@ -58,8 +57,19 @@ export const OptionChain = () => {
               <SelectValue placeholder="Select asset" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="btc">Bitcoin (BTC)</SelectItem>
-              <SelectItem value="eth">Ethereum (ETH)</SelectItem>
+              <SelectItem value="steth">stETH</SelectItem>
+              <SelectItem value="xstrk">xSTRK</SelectItem>
+            </SelectContent>
+          </Select>
+          <Select>
+            <SelectTrigger className="w-[160px]">
+              <SelectValue placeholder="Staked time" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="1month">1 Month</SelectItem>
+              <SelectItem value="3months">3 Months</SelectItem>
+              <SelectItem value="6months">6 Months</SelectItem>
+              <SelectItem value="12months">12 Months</SelectItem>
             </SelectContent>
           </Select>
           <Select>
