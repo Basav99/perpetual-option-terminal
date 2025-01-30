@@ -63,12 +63,47 @@ export const OptionChain = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[200px]">
-              <SelectValue placeholder="Select expiry" />
+            <SelectTrigger className="w-[160px]">
+              <SelectValue placeholder="Select days" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="1w">1 Week</SelectItem>
-              <SelectItem value="2w">2 Weeks</SelectItem>
+              <SelectItem value="monday">Monday</SelectItem>
+              <SelectItem value="tuesday">Tuesday</SelectItem>
+              <SelectItem value="wednesday">Wednesday</SelectItem>
+              <SelectItem value="thursday">Thursday</SelectItem>
+              <SelectItem value="friday">Friday</SelectItem>
+              <SelectItem value="saturday">Saturday</SelectItem>
+              <SelectItem value="sunday">Sunday</SelectItem>
+            </SelectContent>
+          </Select>
+          <Select>
+            <SelectTrigger className="w-[160px]">
+              <SelectValue placeholder="Select week" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="week1">Week 1</SelectItem>
+              <SelectItem value="week2">Week 2</SelectItem>
+              <SelectItem value="week3">Week 3</SelectItem>
+              <SelectItem value="week4">Week 4</SelectItem>
+            </SelectContent>
+          </Select>
+          <Select>
+            <SelectTrigger className="w-[160px]">
+              <SelectValue placeholder="Select month" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="jan">January</SelectItem>
+              <SelectItem value="feb">February</SelectItem>
+              <SelectItem value="mar">March</SelectItem>
+              <SelectItem value="apr">April</SelectItem>
+              <SelectItem value="may">May</SelectItem>
+              <SelectItem value="jun">June</SelectItem>
+              <SelectItem value="jul">July</SelectItem>
+              <SelectItem value="aug">August</SelectItem>
+              <SelectItem value="sep">September</SelectItem>
+              <SelectItem value="oct">October</SelectItem>
+              <SelectItem value="nov">November</SelectItem>
+              <SelectItem value="dec">December</SelectItem>
             </SelectContent>
           </Select>
         </div>
